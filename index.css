@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    padding: 50px 100px
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-placeholder {
+    min-width: 40%;
+    background-color: papayawhip;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.for-text {
+    text-align: center;
+}
