@@ -1,7 +1,25 @@
-body {
-    height: 100vh;
-    padding: 50px 100px
+html {
+    height: 100%;
 }
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+   margin-bottom: 10px;
+}
+
+.top-container {
+    background-color: #3A015C;
+    color: white;
+}
+
+.top-container, .mid-container, .quote-container, .banner-signup {
+    padding: 10px 50px;
+}
+
 
 .links {
     display: flex;
@@ -10,10 +28,12 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 ul {
     list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .header-container {
@@ -22,20 +42,200 @@ ul {
     align-items: center;
 }
 
-.container {
+.top-container {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-logo {
+    font-weight: 800;
+}
+
+.description-container {
     display: flex;
     justify-content: space-between;
 }
 
+.description-title {
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+.description-main {
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .img-placeholder {
-    min-width: 40%;
-    background-color: papayawhip;
+   
+    height: 250px;
+    width: 50%;
+    background-color: #B3A7B8;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .for-text {
     text-align: center;
+    color: #F5F5F5;
 }
+
+.mid-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-1, .img-2, .img-3, .img-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.one, .two, .three, .four {
+    height: 150px;
+    width: 100%;
+    max-width: 150px;
+    min-width: 150px;
+    border: 2px solid #3B7DA8;
+    border-radius: 12px;
+}
+
+.mid-content p {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #00E6CF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+input[type="submit"]:hover {
+    background-color: #00B4A5;
+  }
+
+h3 {
+    text-align: center;
+}
+
+.quote-container {
+    align-items: center;
+    padding-left: 30px 50px;
+    background-color: #FFFADE;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+    .quote-container {
+        padding: 50px 300px;
+    
+    }
+}
+
+@media (min-width: 1200px) {
+    .quote-container {
+        padding: 60px 400px;
+    }
+}
+
+.quote {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.5;
+    color: rgb(75, 74, 74);
+}
+
+.quote-by {
+    text-align: end;
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(27, 27, 27);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.banner-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #00E6CF;
+    width: 60%;
+    gap: 10%;
+}
+
+.custom-button {
+    background-color: #00E6CF;
+    padding: 8px 18px;
+    border-radius: 5px;
+    border: 2px solid ;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 900;
+    box-sizing: border-box;
+    width: 104.91px;
+    height: 43px;
+    white-space: nowrap;
+}
+
+.custom-button:hover {
+    background-color: #00B4A5;
+}
+
+span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.banner-header {
+    color: #F5F5F5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.doge {
+    color: #F9F871;
+}
+
+.cate {
+    color: #9E3381;
+}
+
+.banner-description {
+    color: #F5F5F5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-container {
+    background-color: #614471;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
